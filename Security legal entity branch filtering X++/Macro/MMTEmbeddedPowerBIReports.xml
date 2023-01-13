@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxMacroDictionary xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>MMTEmbeddedPowerBIReports</Name>
+	<Source>#define.BranchName("BRANCH")&#xD;
+&#xD;
+#define.CR031PowerBIReport(MMTManualHireAndSalesDeliveryAndReturnNotesPlusStockTransferPowerBIReportV6)&#xD;
+#define.CR031TableName("Manual Hire Delivery Notes")&#xD;
+#define.CR031BranchFilter("BRANCH")&#xD;
+#define.CR031CompanyFilter("DATAAREAID")&#xD;
+&#xD;
+&#xD;
+&#xD;
+/// &lt;summary&gt;&#xD;
+///   Holds the names of all PowerBI reports for filtering[Role-based security on PowerBI Embedded reports] by branch and legal entity&#xD;
+/// &lt;/summary&gt;&#xD;
+/// Created      : 16/08/2022&#xD;
+/// Created by   : Huggins Mafigu&#xD;
+/// Requested by : Lizelle Conradie&#xD;
+&#xD;
+&#xD;
+#define.MMTCurrentOnsiteOffHire(MMTCurrentOnsiteOffHirePowerBIReportV17)&#xD;
+//#define.MMTYearToDateDiscountAnalysis(MMTYearToDateDiscountAnalysisPowerBIReportV11) //Report not yet available&#xD;
+&#xD;
+#define.CR026PowerBIReport(MMTDetailInventoryValuationbyPartDescriptionReportV09)&#xD;
+#define.CR026TableName("MMTRmsDetailInventoryValuation")&#xD;
+#define.CR026BranchFilter("BRANCH")&#xD;
+#define.CR026CompanyFilter("DATAAREAID")&#xD;
+&#xD;
+&#xD;
+#define.CR027PowerBIReport(MMTHireRegisterFromDateToDatePowerBIReportVersion9)&#xD;
+#define.CR027TableName("MMTRmsHireRegistrationFromDateToDateAnalysisMeasurement")&#xD;
+#define.CR027BranchFilter("CUSTBRANCH")&#xD;
+#define.CR027CompanyFilter("DATAAREAID")&#xD;
+&#xD;
+&#xD;
+#define.CR028PowerBIReport(MMTCurrentOnsiteOffHirePBIReportVersion17)&#xD;
+#define.CR028TableName("MMTRmsSalesOrderMeasurement")&#xD;
+#define.CR028BranchFilter("BRANCH")&#xD;
+#define.CR028CompanyFilter("DATAAREAID")&#xD;
+&#xD;
+#define.CR029PowerBIReport(MMTCurrentBasketContractSitePowerBIReportV6)&#xD;
+#define.CR029TableName("ProjectInvoice")&#xD;
+#define.CR029BranchFilter("BRANCH")&#xD;
+#define.CR029CompanyFilter("DATAAREAID")&#xD;
+&#xD;
+#define.CR032PowerBIReport(MMTRehireEquipmentByBranchBySupplierByProductPBIReportVersion5)&#xD;
+#define.CR032TableName("Cross-Rental Equipment")&#xD;
+#define.CR032BranchFilter("BRANCH")&#xD;
+#define.CR032CompanyFilter("DATAAREAID")&#xD;
+&#xD;
+#define.CR033PowerBIReport(MMTOutstandingHireOrderAndDeliveriesByOrderNumberByProductPowerBIReportV7)&#xD;
+#define.CR033TableName("MMTRmsOutstandingHireOrders")&#xD;
+#define.CR033BranchFilter("BRANCH")&#xD;
+#define.CR033CompanyFilter("DATAAREAID")&#xD;
+&#xD;
+#define.CR034PowerBIReport(MMTEquipmentWithZeroRatesOnSiteBySiteByProductPBIReportVersion12)&#xD;
+#define.CR034TableName("MMTRmsEquipmentWithZeroRatesMeasurement")&#xD;
+#define.CR034BranchFilter("BRANCH")&#xD;
+#define.CR034CompanyFilter("DATAAREAID")&#xD;
+&#xD;
+#define.CR036PowerBIReport(MMTHireQuotesForThePeriodPBIReportVersion6)&#xD;
+#define.CR036TableName("MMTRmsSalesQuotationMeasurement")&#xD;
+#define.CR036BranchFilter("BRANCH")&#xD;
+#define.CR036CompanyFilter("DATAAREAID")&#xD;
+&#xD;
+#define.CR038PowerBIReport(MMTDetailSitePowerBIReportV5)&#xD;
+#define.CR038TableName("MMTRmsTerminationMeasurement")&#xD;
+#define.CR038BranchFilter("BRANCH")&#xD;
+#define.CR038CompanyFilter("DATAAREAID")&#xD;
+&#xD;
+#define.CR058PowerBIReport(MMTDoEquipmentPlanningPowerBIReportV7)&#xD;
+#define.CR058TableName("InventTrans")&#xD;
+#define.CR058BranchFilter("BRANCH")&#xD;
+#define.CR058CompanyFilter("DATAAREAID")&#xD;
+&#xD;
+</Source>
+	<Macros />
+</AxMacroDictionary>

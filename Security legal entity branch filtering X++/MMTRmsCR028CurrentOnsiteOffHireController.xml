@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>MMTRmsCR028CurrentOnsiteOffHireController</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+class MMTRmsCR028CurrentOnsiteOffHireController  extends MMTEmbeddedPowerBIController
+{
+    #MMTEmbeddedPowerBIReports
+
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>companyFilterColumnName</Name>
+				<Source><![CDATA[
+    protected str companyFilterColumnName()
+    {
+        return #CR028CompanyFilter;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>main</Name>
+				<Source><![CDATA[
+    public static void main(Args _args)
+    {
+        MMTRmsCR028CurrentOnsiteOffHireController controller = new MMTRmsCR028CurrentOnsiteOffHireController();
+        controller.parmBranch(#CR028BranchFilter);
+        controller.parmTableName(#CR028TableName);
+        _args.parm(resourceStr(#CR028PowerBIReport));
+        controller.run(_args);
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>

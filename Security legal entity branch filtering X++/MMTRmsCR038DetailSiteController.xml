@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>MMTRmsCR038DetailSiteController</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+class MMTRmsCR038DetailSiteController extends MMTEmbeddedPowerBIController
+{
+
+    #MMTEmbeddedPowerBIReports
+
+
+
+
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>companyFilterColumnName</Name>
+				<Source><![CDATA[
+    protected str companyFilterColumnName()
+    {
+        return #CR038CompanyFilter;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>main</Name>
+				<Source><![CDATA[
+    public static void main(Args _args)
+    {
+        MMTRmsCR038DetailSiteController controller = new MMTRmsCR038DetailSiteController();
+        controller.parmBranch(#CR038BranchFilter);
+        controller.parmTableName(#CR038TableName);
+        _args.parm(resourceStr(#CR038PowerBIReport));
+        controller.run(_args);
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>

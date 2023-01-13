@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>MMTRmsCR032RehireEquipmentController</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+class MMTRmsCR032RehireEquipmentController extends MMTEmbeddedPowerBIController
+{
+
+    #MMTEmbeddedPowerBIReports
+
+
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>companyFilterColumnName</Name>
+				<Source><![CDATA[
+    protected str companyFilterColumnName()
+    {
+        return #CR032CompanyFilter;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>main</Name>
+				<Source><![CDATA[
+    public static void main(Args _args)
+    {
+        MMTRmsCR032RehireEquipmentController controller = new MMTRmsCR032RehireEquipmentController();
+        controller.parmBranch(#CR032BranchFilter);
+        controller.parmTableName(#CR032TableName);
+        _args.parm(resourceStr(#CR032PowerBIReport));
+        controller.run(_args);
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>

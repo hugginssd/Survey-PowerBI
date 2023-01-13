@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>MMTRmsCR034EquipmentWithZeroRatesController</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+class MMTRmsCR034EquipmentWithZeroRatesController extends MMTEmbeddedPowerBIController
+{
+
+    #MMTEmbeddedPowerBIReports
+
+
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>companyFilterColumnName</Name>
+				<Source><![CDATA[
+    protected str companyFilterColumnName()
+    {
+        return #CR034CompanyFilter;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>main</Name>
+				<Source><![CDATA[
+    public static void main(Args _args)
+    {
+        MMTRmsCR034EquipmentWithZeroRatesController controller = new MMTRmsCR034EquipmentWithZeroRatesController();
+        controller.parmBranch(#CR034BranchFilter);
+        controller.parmTableName(#CR034TableName);
+        _args.parm(resourceStr(#CR034PowerBIReport));
+        controller.run(_args);
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>

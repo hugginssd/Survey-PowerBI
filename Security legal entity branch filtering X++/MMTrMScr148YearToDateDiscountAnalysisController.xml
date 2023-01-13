@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>MMTrMScr148YearToDateDiscountAnalysisController</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+class MMTRmsCR148YearToDateDiscountAnalysisController  extends MMTEmbeddedPowerBIController
+{
+
+    #MMTEmbeddedPowerBIReports
+
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>companyFilterColumnName</Name>
+				<Source><![CDATA[
+    protected str companyFilterColumnName()
+    {
+        return #CR031CompanyFilter; //replace with CR148 company filter
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>main</Name>
+				<Source><![CDATA[
+    public static void main(Args _args)
+    {
+        MMTRmsCR148YearToDateDiscountAnalysisController controller = new MMTRmsCR148YearToDateDiscountAnalysisController();
+        controller.parmBranch(#BranchName);//replace with CR148 branch filter
+        controller.parmTableName(#CR031TableName);//replace with CR148 tablename filter
+       // _args.parm(resourceStr(#MMTYearToDateDiscountAnalysis));
+        controller.run(_args);
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>
